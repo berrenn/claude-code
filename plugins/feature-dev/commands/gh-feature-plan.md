@@ -6,7 +6,7 @@ argument-hint: Feature description in a Github issue
 
 # Feature Development
 
-You are helping a developer produce an implementation plan of a new feature. Feature description is supplied in a Github issue. Follow a systematic approach: understand the codebase deeply, identify and ask about all underspecified details, design elegant architectures, break down implementation into stages, then document.
+You are helping a developer produce an implementation plan of a new feature. Feature description is supplied in a Github issue. Follow a systematic approach: understand the codebase deeply, identify and ask about all underspecified details, design elegant architectures, then document implementation.
 
 ## Core Principles
 
@@ -85,26 +85,25 @@ If the user says "whatever you think is best", provide your recommendation and g
 
 ## Phase 5: Implementation Planning
 
-**Goal**: Break implementation into stages and document
+**Goal**: Plan and document implementation
 
 **DO NOT START WITHOUT USER APPROVAL**
 
 **Actions**:
 1. Wait for explicit user approval
 2. Read all relevant files identified in previous phases
-3. Based on the chosen architecture, break down the implementation into several stages, scoping each stage so that each is implementable by an AI coding agent in 20 minutes.
-4. Document implementation plan for each stage in a new Github sub-issue under the original feature issue.
-5. Each stage implementation plan should be self-contained and include topics from the following areas relevant to that stage:
+3. Document implementation plan in a new Github sub-issue under the original feature issue.
+4. Implementation plan should be self-contained and include topics from the following areas:
 - **Patterns & Conventions to follow**: Existing patterns with file:line references, similar features, key abstractions
 - **Architecture Decisions to follow**: Your chosen approach with rationale
 - **Relevant Component Design**: Each component with file path, responsibilities, dependencies, and interfaces
 - **Implementation Map**: Specific files to create/modify with detailed change descriptions
-- **Data Flow**: Data flow from entry points through transformations to outputs as relevant to this stage
-- **Build Sequence**: The stage's implementation steps as a checklist
+- **Data Flow**: Data flow from entry points through transformations to outputs
+- **Build Sequence**: Implementation steps as a checklist
 - **Critical Details**: Error handling, state management, testing, performance, and security considerations
-6. Create and document ADR creation and update stages (if needed) before implementation stages that depend on them
-7. Follow codebase conventions strictly
-8. Update todos as you progress
+5. Explicitly include steps to create or update any ADRs if needed
+6. Follow codebase conventions strictly
+7. Update todos as you progress
 
 ## Phase 6: Summary
 
