@@ -85,7 +85,7 @@ If the user says "whatever you think is best", provide your recommendation and g
 
 ## Phase 5: Implementation Planning
 
-**Goal**: Break implementation ino stages and document
+**Goal**: Break implementation into stages and document
 
 **DO NOT START WITHOUT USER APPROVAL**
 
@@ -102,8 +102,9 @@ If the user says "whatever you think is best", provide your recommendation and g
 - **Data Flow**: Data flow from entry points through transformations to outputs as relevant to this stage
 - **Build Sequence**: The stage's implementation steps as a checklist
 - **Critical Details**: Error handling, state management, testing, performance, and security considerations
-6. Follow codebase conventions strictly
-7. Update todos as you progress
+6. Create and document ADR creation and update stages (if needed) before implementation stages that depend on them
+7. Follow codebase conventions strictly
+8. Update todos as you progress
 
 ## Phase 6: Summary
 
